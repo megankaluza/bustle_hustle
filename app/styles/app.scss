@@ -1,0 +1,18 @@
+$blue: #3A7CA5;
+
+body {
+  width: 100%;
+  background-color: $blue;
+  text-align: center;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+img {
+  border: 1px solid black;
+  border-radius: 40%;
+  box-shadow: 5px 5px 10px white;
+}

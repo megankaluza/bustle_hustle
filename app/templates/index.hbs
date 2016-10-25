@@ -1,11 +1,15 @@
-<h1>Bustle & Hustle</h1>
+<div class="container">
+  <header class="jumbotron">
+    <h1>Bustle & Hustle</h1>
+  </header>
+</div>
 
 <ul>
   {{#each model as |article|}}
-    <li>{{article.title}}</li>
+    <h1>{{article.title}}</h1>
+    <li>{{#link-to 'about'}}<img src="{{article.image}}" alt="img" width="350px">{{/link-to}}</li>
     <li>Author:{{article.author}}</li>
     <li>Date:{{article.date}}</li>
-    <li><img src="{{article.image}}" alt="img" width="350px"></li>
   {{/each}}
   </ul>
   {{#link-to 'about'}}Home{{/link-to}}
