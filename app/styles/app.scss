@@ -1,9 +1,14 @@
 $blue: #3A7CA5;
+$rose: #A6808C;
 
 body {
   width: 100%;
-  background-color: $blue;
+  background-color: $rose;
   text-align: center;
+}
+
+h1 {
+  font-family: 'Philosopher', sans-serif;
 }
 
 ul,
@@ -13,6 +18,12 @@ li {
 
 img {
   border: 1px solid black;
-  border-radius: 40%;
-  box-shadow: 5px 5px 10px white;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px black;
+  margin: 5%;
+}
+
+header {
+  background-color: $rose;
+  font-family: 'Philosopher', sans-serif;
 }
