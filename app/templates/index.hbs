@@ -1,0 +1,9 @@
+<h1>Bustle && Hustle</h1>
+
+<ul>
+  {{#each model as |article|}}
+    <li>{{article.title}} {{article.author}} <img src="{{article.image}}" alt="img"></li>
+  {{/each}}
+  </ul>
+  {{#link-to 'about'}}Home{{/link-to}}
+  {{#link-to 'gossip'}}Click here to gossip{{/link-to}}
