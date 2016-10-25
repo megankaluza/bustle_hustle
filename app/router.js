@@ -9,6 +9,8 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('about');
   this.route('gossip');
+  this.route('article', {path: '/article/:article_id'});
+  this.route('article-tile');
 });
 
 export default Router;

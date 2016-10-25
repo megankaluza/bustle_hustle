@@ -7,7 +7,7 @@
 <ul>
   {{#each model as |article|}}
     <h1>{{article.title}}</h1>
-    <li>{{#link-to 'about'}}<img src="{{article.image}}" alt="img" width="350px">{{/link-to}}</li>
+    <li>{{#link-to 'article' article.id}}<img src="{{article.image}}" alt="img" width="350px">{{/link-to}}</li>
     <li>Author:{{article.author}}</li>
     <li>Date:{{article.date}}</li>
   {{/each}}
